@@ -1,0 +1,101 @@
+# Python 기본 무시 항목 (GitHub 공식 템플릿 기반)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# 가상환경 폴더 (venv, env 등)
+venv/
+ENV/
+env/
+.env/
+.venv/
+
+# 환경 변수 & API 키 파일 (절대 커밋 금지!)
+.env
+secrets.toml
+*.env.*
+openai_key.txt  # 만약 이런 식으로 저장했다면
+
+# Streamlit 전용
+.streamlit/secrets.toml
+.streamlit/config.toml  # 로컬 설정만 있을 경우
+
+# SQLite DB 파일 (로컬 데이터베이스 – 실제 데이터가 들어가면 커밋 X)
+database/*.db
+database/*.sqlite
+database/*.sqlite3
+*.db
+*.sqlite
+*.sqlite3
+
+# 데이터 폴더 내 대용량/민감 파일 (기출 PDF 등은 OK지만, 필요시 무시)
+data/*.pdf  # ← 기출 PDF를 Git에 올리고 싶지 않으면 주석 해제
+data/*.pptx
+data/*.zip
+
+# 로그, 캐시, 임시 파일
+*.log
+*.logs
+*.tmp
+*.bak
+*.swp
+*~
+
+# 에디터 / IDE 설정 (Cursor / VS Code 기반이니)
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# macOS / Windows 시스템 파일
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# 테스트/커버리지 결과
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+*.pytest_cache/
+tox/
+nox/
+.coverage.*
+.cache/
+nosetests.xml
+coverage.xml
+*,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# 배포/빌드 관련 (필요시)
+*.manifest
+*.spec
+
+# 기타 프로젝트별 임시
+*.bak
+*.backup
+temp/
+tmp/
