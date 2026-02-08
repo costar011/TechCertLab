@@ -1,8 +1,5 @@
-PyPDF2>=3.0
-python-pptx>=0.6.23
-openai>=1.0
-pandas>=2.0
-streamlit>=1.30
-matplotlib>=3.7
-python-dotenv>=1.0
-google-generativeai>=0.8.0
+google-generativeai
+PyPDF2
+python-pptx
+pandas
+python-dotenv
